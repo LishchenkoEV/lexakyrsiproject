@@ -6,9 +6,10 @@ function MainContent({ arrayblock }) {
                 {
                     arrayblock.map( (item,index)=>(
                         <div className="shop-items"
-                        key={index}>
+                            key={index}>
                             <p className="shop-title">{item.nameItems}</p>
-                            <p className="shop-title">{item.model}</p>
+                            <img src={item.image} />
+                            <p className="shop-price">{item.price}</p>
                         </div>
                     ))
                 }
